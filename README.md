@@ -7,7 +7,7 @@ Cryptocurrency Monitor is a peice of software that utilizes various RESTAPI call
 Using C# Visual Studio .NET Libraries coupled with a few other open source libraries, I created a Cryptocurrency Monitor. It mainly has been used to calculate profits/losses for myself. It enabled me to view several websites data all at once and to monitor the worth of my portfolio.
 
 ##Market Data:
-![Alt text](http://i.imgur.com/qwc4aVp.png "Market Data")
+![Alt text](http://i.imgur.com/MJGvvlX.png "Market Data")
 Mining Tools:
 ![Alt text](http://i.imgur.com/umRtM8X.png "Mining Tools")
 Address Storage:

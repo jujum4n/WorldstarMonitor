@@ -2,9 +2,16 @@ Worldst▲r Monitor - Bet▲ - By: juju
 ===========================
 
 ##Description:
-This Cryptocurrency Monitor is software that utilizes various RESTAPI calls to Display and calculate market data from various Bitcoin Websites (Coinbase, Cryptsy, BTC-E, Blockchain.info)
+This Cryptocurrency Monitor is a peice of software that I wrote which utilizes various RESTAPI calls to Display and calculate market data from various Bitcoin Websites (Coinbase, Cryptsy, BTC-E, Blockchain.info) 
 
-Using C# Visual Studio .NET Libraries coupled with a few other open source libraries, I created a Cryptocurrency Monitor. It mainly has been used to calculate profits/losses for myself. It enabled me to view several websites data all at once and to monitor the worth of my portfolio.
+The reason this project started was because I grew tired of looking at multiple websites as well as using the Calculator in windows and copy and pasting values over and over. 
+The market Data page helped me quickly look at what values my "portfolio" is at as well as quickly, viewing Buy/Sell data on Cryptsy as well as other Bitcoin Prices and market data from Coinbase and btc-e and Blockchain.info. 
+
+The Mining tools page can also create mining statements and helps manage launching the mining commands when yuou would have possibly had a bunch of batch files in the past. 
+
+The Address storage page acts as a place to paste strings, so you dont have to open your wallets or go to other sites to get at your various currency addresses.
+
+This project was done using only C# Visual Studio .NET Libraries coupled with a few other open source libraries, I created a Cryptocurrency Monitor. It mainly has been used to calculate profits/losses for myself. It enabled me to view several websites data all at once and to monitor the worth of my portfolio.
 
 ##Market Data:
 ![Alt text](http://i.imgur.com/MJGvvlX.png "Market Data")

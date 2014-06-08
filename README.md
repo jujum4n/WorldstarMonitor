@@ -2,7 +2,7 @@ Worldst▲r Monitor - Bet▲ - By:juju
 ===========================
 
 ##Description:
-Cryptocurrency Monitor is a peice of software that utilizes various RESTAPI calls to calculate cryptocurrency market data (Coinbase, Cryptsy, BTC-E, Blockchain.info)
+This Cryptocurrency Monitor is software that utilizes various RESTAPI calls to Display and calculate market data from various Bitcoin Websites (Coinbase, Cryptsy, BTC-E, Blockchain.info)
 
 Using C# Visual Studio .NET Libraries coupled with a few other open source libraries, I created a Cryptocurrency Monitor. It mainly has been used to calculate profits/losses for myself. It enabled me to view several websites data all at once and to monitor the worth of my portfolio.
 

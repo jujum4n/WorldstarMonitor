@@ -1,5 +1,5 @@
 #Worldst▲r Crypto-Monitor - Bet▲ v3.0 - By:juju
-#===========================
+===========================
 
 ##Description:
 Cryptocurrency Monitor is a peice of software that utilizes various RESTAPI calls to calculate cryptocurrency market data (Coinbase, Cryptsy, BTC-E, Blockchain.info)

@@ -1,4 +1,4 @@
-#Worldst▲r Crypto-Monitor - Bet▲ v3.0 - By:juju
+Worldst▲r Crypto-Monitor - Bet▲ v3.0 - By:juju
 ===========================
 
 ##Description:

@@ -30,56 +30,61 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title20 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.coinbasePriceLabel = new System.Windows.Forms.Label();
+            this.lastUpdateTimeLabel = new System.Windows.Forms.Label();
+            this.RESTAPIworker = new System.ComponentModel.BackgroundWorker();
+            this.donateTextBox = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btcePriceLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.marketListBox = new System.Windows.Forms.ListBox();
+            this.sellOrdersListBox = new System.Windows.Forms.ListBox();
+            this.buyOrdersListBox = new System.Windows.Forms.ListBox();
+            this.recentTradesListBox = new System.Windows.Forms.ListBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.RESTAPIWorkerProgress = new System.Windows.Forms.ProgressBar();
             this.label48 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.a11 = new System.Windows.Forms.TextBox();
+            this.a10 = new System.Windows.Forms.TextBox();
+            this.a9 = new System.Windows.Forms.TextBox();
+            this.ldonation = new System.Windows.Forms.TextBox();
+            this.lexchange = new System.Windows.Forms.TextBox();
+            this.lwallet = new System.Windows.Forms.TextBox();
+            this.a8 = new System.Windows.Forms.TextBox();
+            this.a4 = new System.Windows.Forms.TextBox();
+            this.a7 = new System.Windows.Forms.TextBox();
+            this.a6 = new System.Windows.Forms.TextBox();
+            this.a5 = new System.Windows.Forms.TextBox();
+            this.a3 = new System.Windows.Forms.TextBox();
+            this.a2 = new System.Windows.Forms.TextBox();
+            this.a1 = new System.Windows.Forms.TextBox();
+            this.bdonation = new System.Windows.Forms.TextBox();
+            this.bexchange = new System.Windows.Forms.TextBox();
+            this.bwallet = new System.Windows.Forms.TextBox();
+            this.ddonation = new System.Windows.Forms.TextBox();
+            this.dexchange = new System.Windows.Forms.TextBox();
+            this.dwallet = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -100,7 +105,7 @@
             this.button13 = new System.Windows.Forms.Button();
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.minerSelector = new System.Windows.Forms.ComboBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox42 = new System.Windows.Forms.TextBox();
             this.textBox41 = new System.Windows.Forms.TextBox();
@@ -113,79 +118,74 @@
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button14 = new System.Windows.Forms.Button();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.mcn8 = new System.Windows.Forms.TextBox();
+            this.mcn7 = new System.Windows.Forms.TextBox();
+            this.mcn6 = new System.Windows.Forms.TextBox();
+            this.mcn5 = new System.Windows.Forms.TextBox();
+            this.mcn4 = new System.Windows.Forms.TextBox();
+            this.mcn3 = new System.Windows.Forms.TextBox();
+            this.mcn2 = new System.Windows.Forms.TextBox();
+            this.mcn1 = new System.Windows.Forms.TextBox();
+            this.mc8 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
-            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.mc7 = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.mc6 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.mc5 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
-            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.mc4 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.mc3 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.mc2 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.mc1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label18 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
+            this.probabilitySolveLabel = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
+            this.networkHashrateLabel = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
+            this.blockRewardLabel = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
+            this.blockHeightLabel = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
+            this.dailyBitcoinSentLabel = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
+            this.dailyTransactionTotalLabel = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
+            this.dailyAVGPriceLabel = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
+            this.totalMarketCapLabel = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
+            this.totalBitcoinLabel = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.listBox8 = new System.Windows.Forms.ListBox();
+            this.quickPriceListBox = new System.Windows.Forms.ListBox();
             this.listBox9 = new System.Windows.Forms.ListBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.listBox7 = new System.Windows.Forms.ListBox();
-            this.listBox6 = new System.Windows.Forms.ListBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.btcValueListBox = new System.Windows.Forms.ListBox();
+            this.totalCoinListBox = new System.Windows.Forms.ListBox();
+            this.marketTotalListBox = new System.Windows.Forms.ListBox();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label28 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.tradingPairLabel = new System.Windows.Forms.Label();
             this.linkLabel10 = new System.Windows.Forms.LinkLabel();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.quickMarketSymbol = new System.Windows.Forms.TextBox();
+            this.quickCryptsyMarketID = new System.Windows.Forms.TextBox();
+            this.quickLastTradeTime = new System.Windows.Forms.TextBox();
+            this.quickStatVolume = new System.Windows.Forms.TextBox();
+            this.quickStatRatio = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.label59 = new System.Windows.Forms.Label();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+            this.RESTAPIWorkerPercentageLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -208,7 +208,6 @@
             this.label1.Size = new System.Drawing.Size(62, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "By: juju   - ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label8
             // 
@@ -219,7 +218,6 @@
             this.label8.Size = new System.Drawing.Size(52, 15);
             this.label8.TabIndex = 15;
             this.label8.Text = "Updated:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label11
             // 
@@ -233,41 +231,39 @@
             this.label11.Text = "Coinbase:  ";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // label12
+            // coinbasePriceLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1126, 9);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 15);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "0000.00";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.coinbasePriceLabel.AutoSize = true;
+            this.coinbasePriceLabel.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coinbasePriceLabel.Location = new System.Drawing.Point(1126, 9);
+            this.coinbasePriceLabel.Name = "coinbasePriceLabel";
+            this.coinbasePriceLabel.Size = new System.Drawing.Size(52, 15);
+            this.coinbasePriceLabel.TabIndex = 19;
+            this.coinbasePriceLabel.Text = "0000.00";
             // 
-            // label13
+            // lastUpdateTimeLabel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(60, 609);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 15);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Last updated:";
+            this.lastUpdateTimeLabel.AutoSize = true;
+            this.lastUpdateTimeLabel.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastUpdateTimeLabel.Location = new System.Drawing.Point(60, 609);
+            this.lastUpdateTimeLabel.Name = "lastUpdateTimeLabel";
+            this.lastUpdateTimeLabel.Size = new System.Drawing.Size(74, 15);
+            this.lastUpdateTimeLabel.TabIndex = 20;
+            this.lastUpdateTimeLabel.Text = "Last updated:";
             // 
-            // backgroundWorker1
+            // RESTAPIworker
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            this.RESTAPIworker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.RESTAPIworker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // textBox9
+            // donateTextBox
             // 
-            this.textBox9.ForeColor = System.Drawing.Color.OrangeRed;
-            this.textBox9.Location = new System.Drawing.Point(978, 609);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(253, 23);
-            this.textBox9.TabIndex = 29;
-            this.textBox9.Text = "1M3UPDSLAPR8KSvTuUu4KHDuGvDVcxGM43";
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.donateTextBox.ForeColor = System.Drawing.Color.OrangeRed;
+            this.donateTextBox.Location = new System.Drawing.Point(978, 609);
+            this.donateTextBox.Name = "donateTextBox";
+            this.donateTextBox.Size = new System.Drawing.Size(253, 23);
+            this.donateTextBox.TabIndex = 29;
+            this.donateTextBox.Text = "1M3UPDSLAPR8KSvTuUu4KHDuGvDVcxGM43";
             // 
             // linkLabel1
             // 
@@ -328,6 +324,71 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "URLs";
             // 
+            // linkLabel12
+            // 
+            this.linkLabel12.AutoSize = true;
+            this.linkLabel12.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel12.Location = new System.Drawing.Point(806, 14);
+            this.linkLabel12.Name = "linkLabel12";
+            this.linkLabel12.Size = new System.Drawing.Size(56, 15);
+            this.linkLabel12.TabIndex = 67;
+            this.linkLabel12.TabStop = true;
+            this.linkLabel12.Text = "btc-e.com";
+            this.linkLabel12.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked_1);
+            // 
+            // linkLabel11
+            // 
+            this.linkLabel11.AutoSize = true;
+            this.linkLabel11.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel11.Location = new System.Drawing.Point(713, 14);
+            this.linkLabel11.Name = "linkLabel11";
+            this.linkLabel11.Size = new System.Drawing.Size(87, 15);
+            this.linkLabel11.TabIndex = 66;
+            this.linkLabel11.TabStop = true;
+            this.linkLabel11.Text = "blockchain.info";
+            this.linkLabel11.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked_1);
+            // 
+            // linkLabel6
+            // 
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel6.Location = new System.Drawing.Point(634, 14);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(73, 15);
+            this.linkLabel6.TabIndex = 65;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "winkdex.com";
+            this.linkLabel6.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked_1);
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel5.Location = new System.Drawing.Point(525, 14);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(103, 15);
+            this.linkLabel5.TabIndex = 64;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "bitcoinwisdom.com";
+            this.linkLabel5.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked_1);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel3.Location = new System.Drawing.Point(6, 14);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(75, 15);
+            this.linkLabel3.TabIndex = 63;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "just-dice.com";
+            this.linkLabel3.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked_1);
+            // 
             // linkLabel8
             // 
             this.linkLabel8.AutoSize = true;
@@ -354,15 +415,15 @@
             this.linkLabel7.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
             this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
-            // label2
+            // btcePriceLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1126, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
-            this.label2.TabIndex = 65;
-            this.label2.Text = "0000.00";
+            this.btcePriceLabel.AutoSize = true;
+            this.btcePriceLabel.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btcePriceLabel.Location = new System.Drawing.Point(1126, 24);
+            this.btcePriceLabel.Name = "btcePriceLabel";
+            this.btcePriceLabel.Size = new System.Drawing.Size(52, 15);
+            this.btcePriceLabel.TabIndex = 65;
+            this.btcePriceLabel.Text = "0000.00";
             // 
             // label7
             // 
@@ -376,42 +437,41 @@
             this.label7.Text = "BTC-E:  ";
             this.label7.Click += new System.EventHandler(this.label7_Click_1);
             // 
-            // listBox1
+            // marketListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(1139, 65);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(91, 499);
-            this.listBox1.TabIndex = 66;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.marketListBox.FormattingEnabled = true;
+            this.marketListBox.ItemHeight = 15;
+            this.marketListBox.Location = new System.Drawing.Point(1139, 65);
+            this.marketListBox.Name = "marketListBox";
+            this.marketListBox.Size = new System.Drawing.Size(91, 499);
+            this.marketListBox.TabIndex = 66;
             // 
-            // listBox2
+            // sellOrdersListBox
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 15;
-            this.listBox2.Location = new System.Drawing.Point(711, 54);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(421, 184);
-            this.listBox2.TabIndex = 68;
+            this.sellOrdersListBox.FormattingEnabled = true;
+            this.sellOrdersListBox.ItemHeight = 15;
+            this.sellOrdersListBox.Location = new System.Drawing.Point(711, 54);
+            this.sellOrdersListBox.Name = "sellOrdersListBox";
+            this.sellOrdersListBox.Size = new System.Drawing.Size(421, 184);
+            this.sellOrdersListBox.TabIndex = 68;
             // 
-            // listBox3
+            // buyOrdersListBox
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 15;
-            this.listBox3.Location = new System.Drawing.Point(711, 259);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(421, 154);
-            this.listBox3.TabIndex = 69;
+            this.buyOrdersListBox.FormattingEnabled = true;
+            this.buyOrdersListBox.ItemHeight = 15;
+            this.buyOrdersListBox.Location = new System.Drawing.Point(711, 259);
+            this.buyOrdersListBox.Name = "buyOrdersListBox";
+            this.buyOrdersListBox.Size = new System.Drawing.Size(421, 154);
+            this.buyOrdersListBox.TabIndex = 69;
             // 
-            // listBox4
+            // recentTradesListBox
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 15;
-            this.listBox4.Location = new System.Drawing.Point(710, 434);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(421, 124);
-            this.listBox4.TabIndex = 70;
+            this.recentTradesListBox.FormattingEnabled = true;
+            this.recentTradesListBox.ItemHeight = 15;
+            this.recentTradesListBox.Location = new System.Drawing.Point(710, 434);
+            this.recentTradesListBox.Name = "recentTradesListBox";
+            this.recentTradesListBox.Size = new System.Drawing.Size(421, 124);
+            this.recentTradesListBox.TabIndex = 70;
             // 
             // label14
             // 
@@ -447,16 +507,15 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "Worldst▲r Crypto-Monitor - Bet▲ v1.0";
             this.notifyIcon1.Visible = true;
-            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
-            // progressBar1
+            // RESTAPIWorkerProgress
             // 
-            this.progressBar1.Location = new System.Drawing.Point(198, 604);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(120, 23);
-            this.progressBar1.Step = 5;
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar1.TabIndex = 88;
+            this.RESTAPIWorkerProgress.Location = new System.Drawing.Point(198, 604);
+            this.RESTAPIWorkerProgress.Name = "RESTAPIWorkerProgress";
+            this.RESTAPIWorkerProgress.Size = new System.Drawing.Size(120, 23);
+            this.RESTAPIWorkerProgress.Step = 5;
+            this.RESTAPIWorkerProgress.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.RESTAPIWorkerProgress.TabIndex = 88;
             // 
             // label48
             // 
@@ -466,30 +525,29 @@
             this.label48.Size = new System.Drawing.Size(52, 15);
             this.label48.TabIndex = 89;
             this.label48.Text = "Markets:";
-            this.label48.Click += new System.EventHandler(this.label48_Click);
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.textBox37);
-            this.tabPage4.Controls.Add(this.textBox36);
-            this.tabPage4.Controls.Add(this.textBox35);
-            this.tabPage4.Controls.Add(this.textBox29);
-            this.tabPage4.Controls.Add(this.textBox30);
-            this.tabPage4.Controls.Add(this.textBox31);
-            this.tabPage4.Controls.Add(this.textBox24);
-            this.tabPage4.Controls.Add(this.textBox25);
-            this.tabPage4.Controls.Add(this.textBox21);
-            this.tabPage4.Controls.Add(this.textBox22);
-            this.tabPage4.Controls.Add(this.textBox23);
-            this.tabPage4.Controls.Add(this.textBox18);
-            this.tabPage4.Controls.Add(this.textBox19);
-            this.tabPage4.Controls.Add(this.textBox20);
-            this.tabPage4.Controls.Add(this.textBox15);
-            this.tabPage4.Controls.Add(this.textBox16);
-            this.tabPage4.Controls.Add(this.textBox17);
-            this.tabPage4.Controls.Add(this.textBox10);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.textBox3);
+            this.tabPage4.Controls.Add(this.a11);
+            this.tabPage4.Controls.Add(this.a10);
+            this.tabPage4.Controls.Add(this.a9);
+            this.tabPage4.Controls.Add(this.ldonation);
+            this.tabPage4.Controls.Add(this.lexchange);
+            this.tabPage4.Controls.Add(this.lwallet);
+            this.tabPage4.Controls.Add(this.a8);
+            this.tabPage4.Controls.Add(this.a4);
+            this.tabPage4.Controls.Add(this.a7);
+            this.tabPage4.Controls.Add(this.a6);
+            this.tabPage4.Controls.Add(this.a5);
+            this.tabPage4.Controls.Add(this.a3);
+            this.tabPage4.Controls.Add(this.a2);
+            this.tabPage4.Controls.Add(this.a1);
+            this.tabPage4.Controls.Add(this.bdonation);
+            this.tabPage4.Controls.Add(this.bexchange);
+            this.tabPage4.Controls.Add(this.bwallet);
+            this.tabPage4.Controls.Add(this.ddonation);
+            this.tabPage4.Controls.Add(this.dexchange);
+            this.tabPage4.Controls.Add(this.dwallet);
             this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.label20);
             this.tabPage4.Controls.Add(this.label26);
@@ -514,145 +572,145 @@
             this.tabPage4.Text = "Address Storage";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // textBox37
+            // a11
             // 
-            this.textBox37.Location = new System.Drawing.Point(420, 299);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(264, 23);
-            this.textBox37.TabIndex = 60;
+            this.a11.Location = new System.Drawing.Point(420, 299);
+            this.a11.Name = "a11";
+            this.a11.Size = new System.Drawing.Size(264, 23);
+            this.a11.TabIndex = 60;
             // 
-            // textBox36
+            // a10
             // 
-            this.textBox36.Location = new System.Drawing.Point(420, 270);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(264, 23);
-            this.textBox36.TabIndex = 59;
+            this.a10.Location = new System.Drawing.Point(420, 270);
+            this.a10.Name = "a10";
+            this.a10.Size = new System.Drawing.Size(264, 23);
+            this.a10.TabIndex = 59;
             // 
-            // textBox35
+            // a9
             // 
-            this.textBox35.Location = new System.Drawing.Point(420, 241);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(264, 23);
-            this.textBox35.TabIndex = 58;
+            this.a9.Location = new System.Drawing.Point(420, 241);
+            this.a9.Name = "a9";
+            this.a9.Size = new System.Drawing.Size(264, 23);
+            this.a9.TabIndex = 58;
             // 
-            // textBox29
+            // ldonation
             // 
-            this.textBox29.Location = new System.Drawing.Point(71, 289);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(264, 23);
-            this.textBox29.TabIndex = 53;
+            this.ldonation.Location = new System.Drawing.Point(71, 289);
+            this.ldonation.Name = "ldonation";
+            this.ldonation.Size = new System.Drawing.Size(264, 23);
+            this.ldonation.TabIndex = 53;
             // 
-            // textBox30
+            // lexchange
             // 
-            this.textBox30.Location = new System.Drawing.Point(71, 260);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(264, 23);
-            this.textBox30.TabIndex = 51;
+            this.lexchange.Location = new System.Drawing.Point(71, 260);
+            this.lexchange.Name = "lexchange";
+            this.lexchange.Size = new System.Drawing.Size(264, 23);
+            this.lexchange.TabIndex = 51;
             // 
-            // textBox31
+            // lwallet
             // 
-            this.textBox31.Location = new System.Drawing.Point(71, 231);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(264, 23);
-            this.textBox31.TabIndex = 50;
+            this.lwallet.Location = new System.Drawing.Point(71, 231);
+            this.lwallet.Name = "lwallet";
+            this.lwallet.Size = new System.Drawing.Size(264, 23);
+            this.lwallet.TabIndex = 50;
             // 
-            // textBox24
+            // a8
             // 
-            this.textBox24.Location = new System.Drawing.Point(420, 212);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(264, 23);
-            this.textBox24.TabIndex = 40;
+            this.a8.Location = new System.Drawing.Point(420, 212);
+            this.a8.Name = "a8";
+            this.a8.Size = new System.Drawing.Size(264, 23);
+            this.a8.TabIndex = 40;
             // 
-            // textBox25
+            // a4
             // 
-            this.textBox25.Location = new System.Drawing.Point(420, 96);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(264, 23);
-            this.textBox25.TabIndex = 39;
+            this.a4.Location = new System.Drawing.Point(420, 96);
+            this.a4.Name = "a4";
+            this.a4.Size = new System.Drawing.Size(264, 23);
+            this.a4.TabIndex = 39;
             // 
-            // textBox21
+            // a7
             // 
-            this.textBox21.Location = new System.Drawing.Point(420, 183);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(264, 23);
-            this.textBox21.TabIndex = 37;
+            this.a7.Location = new System.Drawing.Point(420, 183);
+            this.a7.Name = "a7";
+            this.a7.Size = new System.Drawing.Size(264, 23);
+            this.a7.TabIndex = 37;
             // 
-            // textBox22
+            // a6
             // 
-            this.textBox22.Location = new System.Drawing.Point(420, 154);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(264, 23);
-            this.textBox22.TabIndex = 36;
+            this.a6.Location = new System.Drawing.Point(420, 154);
+            this.a6.Name = "a6";
+            this.a6.Size = new System.Drawing.Size(264, 23);
+            this.a6.TabIndex = 36;
             // 
-            // textBox23
+            // a5
             // 
-            this.textBox23.Location = new System.Drawing.Point(420, 125);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(264, 23);
-            this.textBox23.TabIndex = 35;
+            this.a5.Location = new System.Drawing.Point(420, 125);
+            this.a5.Name = "a5";
+            this.a5.Size = new System.Drawing.Size(264, 23);
+            this.a5.TabIndex = 35;
             // 
-            // textBox18
+            // a3
             // 
-            this.textBox18.Location = new System.Drawing.Point(420, 67);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(264, 23);
-            this.textBox18.TabIndex = 34;
+            this.a3.Location = new System.Drawing.Point(420, 67);
+            this.a3.Name = "a3";
+            this.a3.Size = new System.Drawing.Size(264, 23);
+            this.a3.TabIndex = 34;
             // 
-            // textBox19
+            // a2
             // 
-            this.textBox19.Location = new System.Drawing.Point(420, 38);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(264, 23);
-            this.textBox19.TabIndex = 33;
+            this.a2.Location = new System.Drawing.Point(420, 38);
+            this.a2.Name = "a2";
+            this.a2.Size = new System.Drawing.Size(264, 23);
+            this.a2.TabIndex = 33;
             // 
-            // textBox20
+            // a1
             // 
-            this.textBox20.Location = new System.Drawing.Point(420, 9);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(264, 23);
-            this.textBox20.TabIndex = 32;
+            this.a1.Location = new System.Drawing.Point(420, 9);
+            this.a1.Name = "a1";
+            this.a1.Size = new System.Drawing.Size(264, 23);
+            this.a1.TabIndex = 32;
             // 
-            // textBox15
+            // bdonation
             // 
-            this.textBox15.Location = new System.Drawing.Point(71, 177);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(264, 23);
-            this.textBox15.TabIndex = 30;
+            this.bdonation.Location = new System.Drawing.Point(71, 177);
+            this.bdonation.Name = "bdonation";
+            this.bdonation.Size = new System.Drawing.Size(264, 23);
+            this.bdonation.TabIndex = 30;
             // 
-            // textBox16
+            // bexchange
             // 
-            this.textBox16.Location = new System.Drawing.Point(71, 148);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(264, 23);
-            this.textBox16.TabIndex = 28;
+            this.bexchange.Location = new System.Drawing.Point(71, 148);
+            this.bexchange.Name = "bexchange";
+            this.bexchange.Size = new System.Drawing.Size(264, 23);
+            this.bexchange.TabIndex = 28;
             // 
-            // textBox17
+            // bwallet
             // 
-            this.textBox17.Location = new System.Drawing.Point(71, 119);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(264, 23);
-            this.textBox17.TabIndex = 27;
+            this.bwallet.Location = new System.Drawing.Point(71, 119);
+            this.bwallet.Name = "bwallet";
+            this.bwallet.Size = new System.Drawing.Size(264, 23);
+            this.bwallet.TabIndex = 27;
             // 
-            // textBox10
+            // ddonation
             // 
-            this.textBox10.Location = new System.Drawing.Point(74, 64);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(261, 23);
-            this.textBox10.TabIndex = 25;
+            this.ddonation.Location = new System.Drawing.Point(74, 64);
+            this.ddonation.Name = "ddonation";
+            this.ddonation.Size = new System.Drawing.Size(261, 23);
+            this.ddonation.TabIndex = 25;
             // 
-            // textBox4
+            // dexchange
             // 
-            this.textBox4.Location = new System.Drawing.Point(74, 35);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(261, 23);
-            this.textBox4.TabIndex = 1;
+            this.dexchange.Location = new System.Drawing.Point(74, 35);
+            this.dexchange.Name = "dexchange";
+            this.dexchange.Size = new System.Drawing.Size(261, 23);
+            this.dexchange.TabIndex = 1;
             // 
-            // textBox3
+            // dwallet
             // 
-            this.textBox3.Location = new System.Drawing.Point(74, 6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(261, 23);
-            this.textBox3.TabIndex = 0;
+            this.dwallet.Location = new System.Drawing.Point(74, 6);
+            this.dwallet.Name = "dwallet";
+            this.dwallet.Size = new System.Drawing.Size(261, 23);
+            this.dwallet.TabIndex = 0;
             // 
             // label19
             // 
@@ -816,7 +874,7 @@
             this.tabPage3.Controls.Add(this.button13);
             this.tabPage3.Controls.Add(this.label46);
             this.tabPage3.Controls.Add(this.label45);
-            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Controls.Add(this.minerSelector);
             this.tabPage3.Controls.Add(this.richTextBox1);
             this.tabPage3.Controls.Add(this.textBox42);
             this.tabPage3.Controls.Add(this.textBox41);
@@ -855,7 +913,6 @@
             this.label46.Size = new System.Drawing.Size(200, 15);
             this.label46.TabIndex = 61;
             this.label46.Text = "juju\'s AutoBat Gen for Scrypt Mining";
-            this.label46.Click += new System.EventHandler(this.label46_Click);
             // 
             // label45
             // 
@@ -867,19 +924,19 @@
             this.label45.TabIndex = 60;
             this.label45.Text = "Miner";
             // 
-            // comboBox1
+            // minerSelector
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.minerSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.minerSelector.FormattingEnabled = true;
+            this.minerSelector.Items.AddRange(new object[] {
             "cgminer",
             "cudaminer",
             "minerd"});
-            this.comboBox1.Location = new System.Drawing.Point(414, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox1.Size = new System.Drawing.Size(135, 23);
-            this.comboBox1.TabIndex = 59;
+            this.minerSelector.Location = new System.Drawing.Point(414, 6);
+            this.minerSelector.Name = "minerSelector";
+            this.minerSelector.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.minerSelector.Size = new System.Drawing.Size(135, 23);
+            this.minerSelector.TabIndex = 59;
             // 
             // richTextBox1
             // 
@@ -975,29 +1032,29 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button14);
-            this.groupBox2.Controls.Add(this.textBox57);
-            this.groupBox2.Controls.Add(this.textBox58);
-            this.groupBox2.Controls.Add(this.textBox55);
-            this.groupBox2.Controls.Add(this.textBox56);
-            this.groupBox2.Controls.Add(this.textBox53);
-            this.groupBox2.Controls.Add(this.textBox54);
-            this.groupBox2.Controls.Add(this.textBox52);
-            this.groupBox2.Controls.Add(this.textBox51);
-            this.groupBox2.Controls.Add(this.textBox50);
+            this.groupBox2.Controls.Add(this.mcn8);
+            this.groupBox2.Controls.Add(this.mcn7);
+            this.groupBox2.Controls.Add(this.mcn6);
+            this.groupBox2.Controls.Add(this.mcn5);
+            this.groupBox2.Controls.Add(this.mcn4);
+            this.groupBox2.Controls.Add(this.mcn3);
+            this.groupBox2.Controls.Add(this.mcn2);
+            this.groupBox2.Controls.Add(this.mcn1);
+            this.groupBox2.Controls.Add(this.mc8);
             this.groupBox2.Controls.Add(this.button11);
-            this.groupBox2.Controls.Add(this.textBox49);
+            this.groupBox2.Controls.Add(this.mc7);
             this.groupBox2.Controls.Add(this.button10);
-            this.groupBox2.Controls.Add(this.textBox47);
+            this.groupBox2.Controls.Add(this.mc6);
             this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Controls.Add(this.textBox48);
+            this.groupBox2.Controls.Add(this.mc5);
             this.groupBox2.Controls.Add(this.button9);
-            this.groupBox2.Controls.Add(this.textBox43);
+            this.groupBox2.Controls.Add(this.mc4);
             this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.textBox44);
+            this.groupBox2.Controls.Add(this.mc3);
             this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.textBox45);
+            this.groupBox2.Controls.Add(this.mc2);
             this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.textBox46);
+            this.groupBox2.Controls.Add(this.mc1);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Location = new System.Drawing.Point(6, 223);
             this.groupBox2.Name = "groupBox2";
@@ -1016,68 +1073,68 @@
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
-            // textBox57
+            // mcn8
             // 
-            this.textBox57.Location = new System.Drawing.Point(6, 231);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(75, 23);
-            this.textBox57.TabIndex = 85;
+            this.mcn8.Location = new System.Drawing.Point(6, 231);
+            this.mcn8.Name = "mcn8";
+            this.mcn8.Size = new System.Drawing.Size(75, 23);
+            this.mcn8.TabIndex = 85;
             // 
-            // textBox58
+            // mcn7
             // 
-            this.textBox58.Location = new System.Drawing.Point(6, 202);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(75, 23);
-            this.textBox58.TabIndex = 84;
+            this.mcn7.Location = new System.Drawing.Point(6, 202);
+            this.mcn7.Name = "mcn7";
+            this.mcn7.Size = new System.Drawing.Size(75, 23);
+            this.mcn7.TabIndex = 84;
             // 
-            // textBox55
+            // mcn6
             // 
-            this.textBox55.Location = new System.Drawing.Point(6, 173);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(75, 23);
-            this.textBox55.TabIndex = 83;
+            this.mcn6.Location = new System.Drawing.Point(6, 173);
+            this.mcn6.Name = "mcn6";
+            this.mcn6.Size = new System.Drawing.Size(75, 23);
+            this.mcn6.TabIndex = 83;
             // 
-            // textBox56
+            // mcn5
             // 
-            this.textBox56.Location = new System.Drawing.Point(6, 144);
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(75, 23);
-            this.textBox56.TabIndex = 82;
+            this.mcn5.Location = new System.Drawing.Point(6, 144);
+            this.mcn5.Name = "mcn5";
+            this.mcn5.Size = new System.Drawing.Size(75, 23);
+            this.mcn5.TabIndex = 82;
             // 
-            // textBox53
+            // mcn4
             // 
-            this.textBox53.Location = new System.Drawing.Point(6, 115);
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(75, 23);
-            this.textBox53.TabIndex = 81;
+            this.mcn4.Location = new System.Drawing.Point(6, 115);
+            this.mcn4.Name = "mcn4";
+            this.mcn4.Size = new System.Drawing.Size(75, 23);
+            this.mcn4.TabIndex = 81;
             // 
-            // textBox54
+            // mcn3
             // 
-            this.textBox54.Location = new System.Drawing.Point(6, 86);
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(75, 23);
-            this.textBox54.TabIndex = 80;
+            this.mcn3.Location = new System.Drawing.Point(6, 86);
+            this.mcn3.Name = "mcn3";
+            this.mcn3.Size = new System.Drawing.Size(75, 23);
+            this.mcn3.TabIndex = 80;
             // 
-            // textBox52
+            // mcn2
             // 
-            this.textBox52.Location = new System.Drawing.Point(6, 53);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(75, 23);
-            this.textBox52.TabIndex = 79;
+            this.mcn2.Location = new System.Drawing.Point(6, 53);
+            this.mcn2.Name = "mcn2";
+            this.mcn2.Size = new System.Drawing.Size(75, 23);
+            this.mcn2.TabIndex = 79;
             // 
-            // textBox51
+            // mcn1
             // 
-            this.textBox51.Location = new System.Drawing.Point(6, 22);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(75, 23);
-            this.textBox51.TabIndex = 78;
+            this.mcn1.Location = new System.Drawing.Point(6, 22);
+            this.mcn1.Name = "mcn1";
+            this.mcn1.Size = new System.Drawing.Size(75, 23);
+            this.mcn1.TabIndex = 78;
             // 
-            // textBox50
+            // mc8
             // 
-            this.textBox50.Location = new System.Drawing.Point(87, 231);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(482, 23);
-            this.textBox50.TabIndex = 76;
+            this.mc8.Location = new System.Drawing.Point(87, 231);
+            this.mc8.Name = "mc8";
+            this.mc8.Size = new System.Drawing.Size(482, 23);
+            this.mc8.TabIndex = 76;
             // 
             // button11
             // 
@@ -1089,12 +1146,12 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // textBox49
+            // mc7
             // 
-            this.textBox49.Location = new System.Drawing.Point(87, 202);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(482, 23);
-            this.textBox49.TabIndex = 74;
+            this.mc7.Location = new System.Drawing.Point(87, 202);
+            this.mc7.Name = "mc7";
+            this.mc7.Size = new System.Drawing.Size(482, 23);
+            this.mc7.TabIndex = 74;
             // 
             // button10
             // 
@@ -1106,12 +1163,12 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // textBox47
+            // mc6
             // 
-            this.textBox47.Location = new System.Drawing.Point(87, 173);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(482, 23);
-            this.textBox47.TabIndex = 72;
+            this.mc6.Location = new System.Drawing.Point(87, 173);
+            this.mc6.Name = "mc6";
+            this.mc6.Size = new System.Drawing.Size(482, 23);
+            this.mc6.TabIndex = 72;
             // 
             // button8
             // 
@@ -1123,13 +1180,12 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // textBox48
+            // mc5
             // 
-            this.textBox48.Location = new System.Drawing.Point(87, 144);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(483, 23);
-            this.textBox48.TabIndex = 70;
-            this.textBox48.TextChanged += new System.EventHandler(this.textBox48_TextChanged);
+            this.mc5.Location = new System.Drawing.Point(87, 144);
+            this.mc5.Name = "mc5";
+            this.mc5.Size = new System.Drawing.Size(483, 23);
+            this.mc5.TabIndex = 70;
             // 
             // button9
             // 
@@ -1141,12 +1197,12 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // textBox43
+            // mc4
             // 
-            this.textBox43.Location = new System.Drawing.Point(87, 115);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(482, 23);
-            this.textBox43.TabIndex = 68;
+            this.mc4.Location = new System.Drawing.Point(87, 115);
+            this.mc4.Name = "mc4";
+            this.mc4.Size = new System.Drawing.Size(482, 23);
+            this.mc4.TabIndex = 68;
             // 
             // button7
             // 
@@ -1158,12 +1214,12 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // textBox44
+            // mc3
             // 
-            this.textBox44.Location = new System.Drawing.Point(87, 86);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(482, 23);
-            this.textBox44.TabIndex = 67;
+            this.mc3.Location = new System.Drawing.Point(87, 86);
+            this.mc3.Name = "mc3";
+            this.mc3.Size = new System.Drawing.Size(482, 23);
+            this.mc3.TabIndex = 67;
             // 
             // button6
             // 
@@ -1175,12 +1231,12 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // textBox45
+            // mc2
             // 
-            this.textBox45.Location = new System.Drawing.Point(87, 52);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(482, 23);
-            this.textBox45.TabIndex = 66;
+            this.mc2.Location = new System.Drawing.Point(87, 52);
+            this.mc2.Name = "mc2";
+            this.mc2.Size = new System.Drawing.Size(482, 23);
+            this.mc2.TabIndex = 66;
             // 
             // button5
             // 
@@ -1192,12 +1248,12 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // textBox46
+            // mc1
             // 
-            this.textBox46.Location = new System.Drawing.Point(87, 22);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(482, 23);
-            this.textBox46.TabIndex = 65;
+            this.mc1.Location = new System.Drawing.Point(87, 22);
+            this.mc1.Name = "mc1";
+            this.mc1.Size = new System.Drawing.Size(482, 23);
+            this.mc1.TabIndex = 65;
             // 
             // button4
             // 
@@ -1212,46 +1268,46 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.label58);
+            this.tabPage1.Controls.Add(this.probabilitySolveLabel);
             this.tabPage1.Controls.Add(this.label29);
-            this.tabPage1.Controls.Add(this.label57);
+            this.tabPage1.Controls.Add(this.networkHashrateLabel);
             this.tabPage1.Controls.Add(this.label32);
-            this.tabPage1.Controls.Add(this.label56);
+            this.tabPage1.Controls.Add(this.blockRewardLabel);
             this.tabPage1.Controls.Add(this.label31);
-            this.tabPage1.Controls.Add(this.label55);
+            this.tabPage1.Controls.Add(this.blockHeightLabel);
             this.tabPage1.Controls.Add(this.label36);
-            this.tabPage1.Controls.Add(this.label54);
+            this.tabPage1.Controls.Add(this.dailyBitcoinSentLabel);
             this.tabPage1.Controls.Add(this.label35);
-            this.tabPage1.Controls.Add(this.label53);
+            this.tabPage1.Controls.Add(this.dailyTransactionTotalLabel);
             this.tabPage1.Controls.Add(this.label34);
-            this.tabPage1.Controls.Add(this.label52);
+            this.tabPage1.Controls.Add(this.dailyAVGPriceLabel);
             this.tabPage1.Controls.Add(this.label33);
-            this.tabPage1.Controls.Add(this.label51);
+            this.tabPage1.Controls.Add(this.totalMarketCapLabel);
             this.tabPage1.Controls.Add(this.label49);
-            this.tabPage1.Controls.Add(this.label50);
+            this.tabPage1.Controls.Add(this.totalBitcoinLabel);
             this.tabPage1.Controls.Add(this.label47);
-            this.tabPage1.Controls.Add(this.listBox8);
+            this.tabPage1.Controls.Add(this.quickPriceListBox);
             this.tabPage1.Controls.Add(this.listBox9);
             this.tabPage1.Controls.Add(this.label40);
             this.tabPage1.Controls.Add(this.label39);
             this.tabPage1.Controls.Add(this.label38);
             this.tabPage1.Controls.Add(this.label37);
             this.tabPage1.Controls.Add(this.label30);
-            this.tabPage1.Controls.Add(this.listBox7);
-            this.tabPage1.Controls.Add(this.listBox6);
-            this.tabPage1.Controls.Add(this.listBox5);
+            this.tabPage1.Controls.Add(this.btcValueListBox);
+            this.tabPage1.Controls.Add(this.totalCoinListBox);
+            this.tabPage1.Controls.Add(this.marketTotalListBox);
             this.tabPage1.Controls.Add(this.chart3);
             this.tabPage1.Controls.Add(this.label28);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.tradingPairLabel);
             this.tabPage1.Controls.Add(this.linkLabel10);
-            this.tabPage1.Controls.Add(this.textBox28);
-            this.tabPage1.Controls.Add(this.textBox27);
-            this.tabPage1.Controls.Add(this.textBox26);
-            this.tabPage1.Controls.Add(this.textBox14);
-            this.tabPage1.Controls.Add(this.textBox13);
+            this.tabPage1.Controls.Add(this.quickMarketSymbol);
+            this.tabPage1.Controls.Add(this.quickCryptsyMarketID);
+            this.tabPage1.Controls.Add(this.quickLastTradeTime);
+            this.tabPage1.Controls.Add(this.quickStatVolume);
+            this.tabPage1.Controls.Add(this.quickStatRatio);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -1269,14 +1325,14 @@
             this.label18.TabIndex = 129;
             this.label18.Text = "Total Bitcoin: ";
             // 
-            // label58
+            // probabilitySolveLabel
             // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(168, 491);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(45, 15);
-            this.label58.TabIndex = 146;
-            this.label58.Text = "label58";
+            this.probabilitySolveLabel.AutoSize = true;
+            this.probabilitySolveLabel.Location = new System.Drawing.Point(168, 491);
+            this.probabilitySolveLabel.Name = "probabilitySolveLabel";
+            this.probabilitySolveLabel.Size = new System.Drawing.Size(14, 15);
+            this.probabilitySolveLabel.TabIndex = 146;
+            this.probabilitySolveLabel.Text = "0";
             // 
             // label29
             // 
@@ -1287,14 +1343,14 @@
             this.label29.TabIndex = 130;
             this.label29.Text = "Market Capitalization:";
             // 
-            // label57
+            // networkHashrateLabel
             // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(115, 476);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(45, 15);
-            this.label57.TabIndex = 145;
-            this.label57.Text = "label57";
+            this.networkHashrateLabel.AutoSize = true;
+            this.networkHashrateLabel.Location = new System.Drawing.Point(115, 476);
+            this.networkHashrateLabel.Name = "networkHashrateLabel";
+            this.networkHashrateLabel.Size = new System.Drawing.Size(14, 15);
+            this.networkHashrateLabel.TabIndex = 145;
+            this.networkHashrateLabel.Text = "0";
             // 
             // label32
             // 
@@ -1305,14 +1361,14 @@
             this.label32.TabIndex = 131;
             this.label32.Text = "24hr avg Price:";
             // 
-            // label56
+            // blockRewardLabel
             // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(91, 461);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(45, 15);
-            this.label56.TabIndex = 144;
-            this.label56.Text = "label56";
+            this.blockRewardLabel.AutoSize = true;
+            this.blockRewardLabel.Location = new System.Drawing.Point(91, 461);
+            this.blockRewardLabel.Name = "blockRewardLabel";
+            this.blockRewardLabel.Size = new System.Drawing.Size(14, 15);
+            this.blockRewardLabel.TabIndex = 144;
+            this.blockRewardLabel.Text = "0";
             // 
             // label31
             // 
@@ -1323,14 +1379,14 @@
             this.label31.TabIndex = 132;
             this.label31.Text = "24hr Transaction Total: ";
             // 
-            // label55
+            // blockHeightLabel
             // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(87, 446);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(45, 15);
-            this.label55.TabIndex = 143;
-            this.label55.Text = "label55";
+            this.blockHeightLabel.AutoSize = true;
+            this.blockHeightLabel.Location = new System.Drawing.Point(87, 446);
+            this.blockHeightLabel.Name = "blockHeightLabel";
+            this.blockHeightLabel.Size = new System.Drawing.Size(14, 15);
+            this.blockHeightLabel.TabIndex = 143;
+            this.blockHeightLabel.Text = "0";
             // 
             // label36
             // 
@@ -1341,14 +1397,14 @@
             this.label36.TabIndex = 133;
             this.label36.Text = "24hr Bitcoin Sent:";
             // 
-            // label54
+            // dailyBitcoinSentLabel
             // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(114, 428);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(45, 15);
-            this.label54.TabIndex = 142;
-            this.label54.Text = "label54";
+            this.dailyBitcoinSentLabel.AutoSize = true;
+            this.dailyBitcoinSentLabel.Location = new System.Drawing.Point(114, 428);
+            this.dailyBitcoinSentLabel.Name = "dailyBitcoinSentLabel";
+            this.dailyBitcoinSentLabel.Size = new System.Drawing.Size(14, 15);
+            this.dailyBitcoinSentLabel.TabIndex = 142;
+            this.dailyBitcoinSentLabel.Text = "0";
             // 
             // label35
             // 
@@ -1359,14 +1415,14 @@
             this.label35.TabIndex = 134;
             this.label35.Text = "Block Height:";
             // 
-            // label53
+            // dailyTransactionTotalLabel
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(143, 413);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(45, 15);
-            this.label53.TabIndex = 141;
-            this.label53.Text = "label53";
+            this.dailyTransactionTotalLabel.AutoSize = true;
+            this.dailyTransactionTotalLabel.Location = new System.Drawing.Point(143, 413);
+            this.dailyTransactionTotalLabel.Name = "dailyTransactionTotalLabel";
+            this.dailyTransactionTotalLabel.Size = new System.Drawing.Size(14, 15);
+            this.dailyTransactionTotalLabel.TabIndex = 141;
+            this.dailyTransactionTotalLabel.Text = "0";
             // 
             // label34
             // 
@@ -1377,14 +1433,14 @@
             this.label34.TabIndex = 135;
             this.label34.Text = "Network Hashrate:";
             // 
-            // label52
+            // dailyAVGPriceLabel
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(98, 395);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(45, 15);
-            this.label52.TabIndex = 140;
-            this.label52.Text = "label52";
+            this.dailyAVGPriceLabel.AutoSize = true;
+            this.dailyAVGPriceLabel.Location = new System.Drawing.Point(98, 395);
+            this.dailyAVGPriceLabel.Name = "dailyAVGPriceLabel";
+            this.dailyAVGPriceLabel.Size = new System.Drawing.Size(14, 15);
+            this.dailyAVGPriceLabel.TabIndex = 140;
+            this.dailyAVGPriceLabel.Text = "0";
             // 
             // label33
             // 
@@ -1395,14 +1451,14 @@
             this.label33.TabIndex = 136;
             this.label33.Text = "Block Reward:";
             // 
-            // label51
+            // totalMarketCapLabel
             // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(134, 380);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(43, 15);
-            this.label51.TabIndex = 139;
-            this.label51.Text = "label51";
+            this.totalMarketCapLabel.AutoSize = true;
+            this.totalMarketCapLabel.Location = new System.Drawing.Point(134, 380);
+            this.totalMarketCapLabel.Name = "totalMarketCapLabel";
+            this.totalMarketCapLabel.Size = new System.Drawing.Size(14, 15);
+            this.totalMarketCapLabel.TabIndex = 139;
+            this.totalMarketCapLabel.Text = "0";
             // 
             // label49
             // 
@@ -1413,14 +1469,14 @@
             this.label49.TabIndex = 137;
             this.label49.Text = "Probability to solve per Hash:";
             // 
-            // label50
+            // totalBitcoinLabel
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(91, 362);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(45, 15);
-            this.label50.TabIndex = 138;
-            this.label50.Text = "label50";
+            this.totalBitcoinLabel.AutoSize = true;
+            this.totalBitcoinLabel.Location = new System.Drawing.Point(91, 362);
+            this.totalBitcoinLabel.Name = "totalBitcoinLabel";
+            this.totalBitcoinLabel.Size = new System.Drawing.Size(14, 15);
+            this.totalBitcoinLabel.TabIndex = 138;
+            this.totalBitcoinLabel.Text = "0";
             // 
             // label47
             // 
@@ -1430,16 +1486,15 @@
             this.label47.Size = new System.Drawing.Size(114, 15);
             this.label47.TabIndex = 110;
             this.label47.Text = "Quick Price Checker";
-            this.label47.Click += new System.EventHandler(this.label47_Click);
             // 
-            // listBox8
+            // quickPriceListBox
             // 
-            this.listBox8.FormattingEnabled = true;
-            this.listBox8.ItemHeight = 15;
-            this.listBox8.Location = new System.Drawing.Point(333, 36);
-            this.listBox8.Name = "listBox8";
-            this.listBox8.Size = new System.Drawing.Size(90, 79);
-            this.listBox8.TabIndex = 108;
+            this.quickPriceListBox.FormattingEnabled = true;
+            this.quickPriceListBox.ItemHeight = 15;
+            this.quickPriceListBox.Location = new System.Drawing.Point(333, 36);
+            this.quickPriceListBox.Name = "quickPriceListBox";
+            this.quickPriceListBox.Size = new System.Drawing.Size(90, 79);
+            this.quickPriceListBox.TabIndex = 108;
             // 
             // listBox9
             // 
@@ -1503,9 +1558,9 @@
             // 
             // listBox7
             // 
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.ItemHeight = 15;
-            this.listBox7.Items.AddRange(new object[] {
+            this.btcValueListBox.FormattingEnabled = true;
+            this.btcValueListBox.ItemHeight = 15;
+            this.btcValueListBox.Items.AddRange(new object[] {
             "0",
             "0",
             "0",
@@ -1519,25 +1574,25 @@
             "0",
             "0",
             "0"});
-            this.listBox7.Location = new System.Drawing.Point(186, 21);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(84, 199);
-            this.listBox7.TabIndex = 101;
+            this.btcValueListBox.Location = new System.Drawing.Point(186, 21);
+            this.btcValueListBox.Name = "listBox7";
+            this.btcValueListBox.Size = new System.Drawing.Size(84, 199);
+            this.btcValueListBox.TabIndex = 101;
             // 
-            // listBox6
+            // totalCoinListBox
             // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.ItemHeight = 15;
-            this.listBox6.Location = new System.Drawing.Point(57, 21);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(133, 199);
-            this.listBox6.TabIndex = 100;
+            this.totalCoinListBox.FormattingEnabled = true;
+            this.totalCoinListBox.ItemHeight = 15;
+            this.totalCoinListBox.Location = new System.Drawing.Point(57, 21);
+            this.totalCoinListBox.Name = "totalCoinListBox";
+            this.totalCoinListBox.Size = new System.Drawing.Size(133, 199);
+            this.totalCoinListBox.TabIndex = 100;
             // 
-            // listBox5
+            // marketTotalListBox
             // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 15;
-            this.listBox5.Items.AddRange(new object[] {
+            this.marketTotalListBox.FormattingEnabled = true;
+            this.marketTotalListBox.ItemHeight = 15;
+            this.marketTotalListBox.Items.AddRange(new object[] {
             "BTC",
             "LTC",
             "DOGE",
@@ -1551,32 +1606,31 @@
             "XPM",
             "ZET",
             "DRK"});
-            this.listBox5.Location = new System.Drawing.Point(8, 21);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(66, 199);
-            this.listBox5.TabIndex = 99;
-            this.listBox5.SelectedIndexChanged += new System.EventHandler(this.listBox5_SelectedIndexChanged);
+            this.marketTotalListBox.Location = new System.Drawing.Point(8, 21);
+            this.marketTotalListBox.Name = "marketTotalListBox";
+            this.marketTotalListBox.Size = new System.Drawing.Size(66, 199);
+            this.marketTotalListBox.TabIndex = 99;
             // 
             // chart3
             // 
-            chartArea20.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea20);
-            legend20.Name = "Legend1";
-            this.chart3.Legends.Add(legend20);
+            chartArea1.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart3.Legends.Add(legend1);
             this.chart3.Location = new System.Drawing.Point(293, 163);
             this.chart3.Name = "chart3";
-            series20.ChartArea = "ChartArea1";
-            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series20.CustomProperties = "DoughnutRadius=70, PieDrawingStyle=Concave, PieLabelStyle=Disabled";
-            series20.Legend = "Legend1";
-            series20.Name = "Series1";
-            this.chart3.Series.Add(series20);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.CustomProperties = "DoughnutRadius=70, PieDrawingStyle=Concave, PieLabelStyle=Disabled";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart3.Series.Add(series1);
             this.chart3.Size = new System.Drawing.Size(391, 349);
             this.chart3.TabIndex = 106;
             this.chart3.Text = "chart3";
-            title20.Name = "Title1";
-            title20.Text = "Overall BTC %";
-            this.chart3.Titles.Add(title20);
+            title1.Name = "Title1";
+            title1.Text = "Overall BTC %";
+            this.chart3.Titles.Add(title1);
             // 
             // label28
             // 
@@ -1614,14 +1668,14 @@
             this.label4.TabIndex = 80;
             this.label4.Text = "Volume";
             // 
-            // label5
+            // tradingPairLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(534, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 15);
-            this.label5.TabIndex = 79;
-            this.label5.Text = "Coin / Coin";
+            this.tradingPairLabel.AutoSize = true;
+            this.tradingPairLabel.Location = new System.Drawing.Point(534, 0);
+            this.tradingPairLabel.Name = "tradingPairLabel";
+            this.tradingPairLabel.Size = new System.Drawing.Size(65, 15);
+            this.tradingPairLabel.TabIndex = 79;
+            this.tradingPairLabel.Text = "Coin / Coin";
             // 
             // linkLabel10
             // 
@@ -1635,40 +1689,40 @@
             this.linkLabel10.Text = "Cryptsy Market ID";
             this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked_1);
             // 
-            // textBox28
+            // quickMarketSymbol
             // 
-            this.textBox28.Location = new System.Drawing.Point(537, 105);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(145, 23);
-            this.textBox28.TabIndex = 77;
+            this.quickMarketSymbol.Location = new System.Drawing.Point(537, 105);
+            this.quickMarketSymbol.Name = "quickMarketSymbol";
+            this.quickMarketSymbol.Size = new System.Drawing.Size(145, 23);
+            this.quickMarketSymbol.TabIndex = 77;
             // 
-            // textBox27
+            // quickCryptsyMarketID
             // 
-            this.textBox27.Location = new System.Drawing.Point(537, 134);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(145, 23);
-            this.textBox27.TabIndex = 76;
+            this.quickCryptsyMarketID.Location = new System.Drawing.Point(537, 134);
+            this.quickCryptsyMarketID.Name = "quickCryptsyMarketID";
+            this.quickCryptsyMarketID.Size = new System.Drawing.Size(145, 23);
+            this.quickCryptsyMarketID.TabIndex = 76;
             // 
-            // textBox26
+            // quickLastTradeTime
             // 
-            this.textBox26.Location = new System.Drawing.Point(537, 76);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(145, 23);
-            this.textBox26.TabIndex = 75;
+            this.quickLastTradeTime.Location = new System.Drawing.Point(537, 76);
+            this.quickLastTradeTime.Name = "quickLastTradeTime";
+            this.quickLastTradeTime.Size = new System.Drawing.Size(145, 23);
+            this.quickLastTradeTime.TabIndex = 75;
             // 
-            // textBox14
+            // quickStatVolume
             // 
-            this.textBox14.Location = new System.Drawing.Point(537, 47);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(145, 23);
-            this.textBox14.TabIndex = 74;
+            this.quickStatVolume.Location = new System.Drawing.Point(537, 47);
+            this.quickStatVolume.Name = "quickStatVolume";
+            this.quickStatVolume.Size = new System.Drawing.Size(145, 23);
+            this.quickStatVolume.TabIndex = 74;
             // 
-            // textBox13
+            // quickStatRatio
             // 
-            this.textBox13.Location = new System.Drawing.Point(537, 18);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(145, 23);
-            this.textBox13.TabIndex = 73;
+            this.quickStatRatio.Location = new System.Drawing.Point(537, 18);
+            this.quickStatRatio.Name = "quickStatRatio";
+            this.quickStatRatio.Size = new System.Drawing.Size(145, 23);
+            this.quickStatRatio.TabIndex = 73;
             // 
             // tabControl1
             // 
@@ -1681,79 +1735,14 @@
             this.tabControl1.Size = new System.Drawing.Size(698, 546);
             this.tabControl1.TabIndex = 63;
             // 
-            // label59
+            // RESTAPIWorkerPercentageLabel
             // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(324, 609);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(45, 15);
-            this.label59.TabIndex = 90;
-            this.label59.Text = "label59";
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.LinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel3.Location = new System.Drawing.Point(6, 14);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(75, 15);
-            this.linkLabel3.TabIndex = 63;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "just-dice.com";
-            this.linkLabel3.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked_1);
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.LinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel5.Location = new System.Drawing.Point(525, 14);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(103, 15);
-            this.linkLabel5.TabIndex = 64;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "bitcoinwisdom.com";
-            this.linkLabel5.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked_1);
-            // 
-            // linkLabel6
-            // 
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.LinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel6.Location = new System.Drawing.Point(634, 14);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(73, 15);
-            this.linkLabel6.TabIndex = 65;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "winkdex.com";
-            this.linkLabel6.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked_1);
-            // 
-            // linkLabel11
-            // 
-            this.linkLabel11.AutoSize = true;
-            this.linkLabel11.LinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel11.Location = new System.Drawing.Point(713, 14);
-            this.linkLabel11.Name = "linkLabel11";
-            this.linkLabel11.Size = new System.Drawing.Size(87, 15);
-            this.linkLabel11.TabIndex = 66;
-            this.linkLabel11.TabStop = true;
-            this.linkLabel11.Text = "blockchain.info";
-            this.linkLabel11.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked_1);
-            // 
-            // linkLabel12
-            // 
-            this.linkLabel12.AutoSize = true;
-            this.linkLabel12.LinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel12.Location = new System.Drawing.Point(806, 14);
-            this.linkLabel12.Name = "linkLabel12";
-            this.linkLabel12.Size = new System.Drawing.Size(56, 15);
-            this.linkLabel12.TabIndex = 67;
-            this.linkLabel12.TabStop = true;
-            this.linkLabel12.Text = "btc-e.com";
-            this.linkLabel12.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked_1);
+            this.RESTAPIWorkerPercentageLabel.AutoSize = true;
+            this.RESTAPIWorkerPercentageLabel.Location = new System.Drawing.Point(324, 609);
+            this.RESTAPIWorkerPercentageLabel.Name = "RESTAPIWorkerPercentageLabel";
+            this.RESTAPIWorkerPercentageLabel.Size = new System.Drawing.Size(45, 15);
+            this.RESTAPIWorkerPercentageLabel.TabIndex = 90;
+            this.RESTAPIWorkerPercentageLabel.Text = "label59";
             // 
             // Form1
             // 
@@ -1762,32 +1751,31 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1238, 633);
-            this.Controls.Add(this.label59);
+            this.Controls.Add(this.RESTAPIWorkerPercentageLabel);
             this.Controls.Add(this.label48);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.RESTAPIWorkerProgress);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.recentTradesListBox);
+            this.Controls.Add(this.buyOrdersListBox);
+            this.Controls.Add(this.sellOrdersListBox);
+            this.Controls.Add(this.btcePriceLabel);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.coinbasePriceLabel);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.marketListBox);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lastUpdateTimeLabel);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.donateTextBox);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Worldst▲r Crypto-Monitor - Bet▲ v3.0";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage4.ResumeLayout(false);
@@ -1813,49 +1801,49 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label coinbasePriceLabel;
+        private System.Windows.Forms.Label lastUpdateTimeLabel;
+        private System.ComponentModel.BackgroundWorker RESTAPIworker;
+        private System.Windows.Forms.TextBox donateTextBox;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.LinkLabel linkLabel7;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label btcePriceLabel;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox marketListBox;
+        private System.Windows.Forms.ListBox sellOrdersListBox;
+        private System.Windows.Forms.ListBox buyOrdersListBox;
+        private System.Windows.Forms.ListBox recentTradesListBox;
         private System.Windows.Forms.LinkLabel linkLabel8;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar RESTAPIWorkerProgress;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox a11;
+        private System.Windows.Forms.TextBox a10;
+        private System.Windows.Forms.TextBox a9;
+        private System.Windows.Forms.TextBox ldonation;
+        private System.Windows.Forms.TextBox lexchange;
+        private System.Windows.Forms.TextBox lwallet;
+        private System.Windows.Forms.TextBox a8;
+        private System.Windows.Forms.TextBox a4;
+        private System.Windows.Forms.TextBox a7;
+        private System.Windows.Forms.TextBox a6;
+        private System.Windows.Forms.TextBox a5;
+        private System.Windows.Forms.TextBox a3;
+        private System.Windows.Forms.TextBox a2;
+        private System.Windows.Forms.TextBox a1;
+        private System.Windows.Forms.TextBox bdonation;
+        private System.Windows.Forms.TextBox bexchange;
+        private System.Windows.Forms.TextBox bwallet;
+        private System.Windows.Forms.TextBox ddonation;
+        private System.Windows.Forms.TextBox dexchange;
+        private System.Windows.Forms.TextBox dwallet;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label26;
@@ -1876,7 +1864,7 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox minerSelector;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox42;
         private System.Windows.Forms.TextBox textBox41;
@@ -1889,74 +1877,74 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.TextBox textBox54;
-        private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.TextBox textBox51;
-        private System.Windows.Forms.TextBox textBox50;
+        private System.Windows.Forms.TextBox mcn8;
+        private System.Windows.Forms.TextBox mcn7;
+        private System.Windows.Forms.TextBox mcn6;
+        private System.Windows.Forms.TextBox mcn5;
+        private System.Windows.Forms.TextBox mcn4;
+        private System.Windows.Forms.TextBox mcn3;
+        private System.Windows.Forms.TextBox mcn2;
+        private System.Windows.Forms.TextBox mcn1;
+        private System.Windows.Forms.TextBox mc8;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox mc7;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox mc6;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.TextBox mc5;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.TextBox mc4;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox mc3;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TextBox mc2;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox mc1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.ListBox listBox8;
+        private System.Windows.Forms.ListBox quickPriceListBox;
         private System.Windows.Forms.ListBox listBox9;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ListBox listBox7;
-        private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.ListBox listBox5;
+        private System.Windows.Forms.ListBox btcValueListBox;
+        private System.Windows.Forms.ListBox totalCoinListBox;
+        private System.Windows.Forms.ListBox marketTotalListBox;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label tradingPairLabel;
         private System.Windows.Forms.LinkLabel linkLabel10;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox quickMarketSymbol;
+        private System.Windows.Forms.TextBox quickCryptsyMarketID;
+        private System.Windows.Forms.TextBox quickLastTradeTime;
+        private System.Windows.Forms.TextBox quickStatVolume;
+        private System.Windows.Forms.TextBox quickStatRatio;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label probabilitySolveLabel;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label networkHashrateLabel;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label blockRewardLabel;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label blockHeightLabel;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label dailyBitcoinSentLabel;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label dailyTransactionTotalLabel;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label dailyAVGPriceLabel;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label totalMarketCapLabel;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label totalBitcoinLabel;
+        private System.Windows.Forms.Label RESTAPIWorkerPercentageLabel;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.LinkLabel linkLabel5;
         private System.Windows.Forms.LinkLabel linkLabel6;

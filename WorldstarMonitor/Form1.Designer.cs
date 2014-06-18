@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -186,6 +186,7 @@
             this.quickStatRatio = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.RESTAPIWorkerPercentageLabel = new System.Windows.Forms.Label();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -263,7 +264,7 @@
             this.donateTextBox.Name = "donateTextBox";
             this.donateTextBox.Size = new System.Drawing.Size(253, 23);
             this.donateTextBox.TabIndex = 29;
-            this.donateTextBox.Text = "1M3UPDSLAPR8KSvTuUu4KHDuGvDVcxGM43";
+            this.donateTextBox.Text = "1FqHi6ytmmgUjpS974W5g346bRDW98SMwE";
             // 
             // linkLabel1
             // 
@@ -307,6 +308,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.linkLabel9);
             this.groupBox1.Controls.Add(this.linkLabel12);
             this.groupBox1.Controls.Add(this.linkLabel11);
             this.groupBox1.Controls.Add(this.linkLabel6);
@@ -1481,7 +1483,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(287, 18);
+            this.label47.Location = new System.Drawing.Point(9, 241);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(114, 15);
             this.label47.TabIndex = 110;
@@ -1491,7 +1493,7 @@
             // 
             this.quickPriceListBox.FormattingEnabled = true;
             this.quickPriceListBox.ItemHeight = 15;
-            this.quickPriceListBox.Location = new System.Drawing.Point(333, 36);
+            this.quickPriceListBox.Location = new System.Drawing.Point(55, 259);
             this.quickPriceListBox.Name = "quickPriceListBox";
             this.quickPriceListBox.Size = new System.Drawing.Size(90, 79);
             this.quickPriceListBox.TabIndex = 108;
@@ -1506,7 +1508,7 @@
             "TIPS",
             "DRK",
             "FTC"});
-            this.listBox9.Location = new System.Drawing.Point(287, 36);
+            this.listBox9.Location = new System.Drawing.Point(9, 259);
             this.listBox9.Name = "listBox9";
             this.listBox9.Size = new System.Drawing.Size(59, 79);
             this.listBox9.TabIndex = 107;
@@ -1514,7 +1516,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(39, 223);
+            this.label40.Location = new System.Drawing.Point(39, 208);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(24, 15);
             this.label40.TabIndex = 105;
@@ -1523,7 +1525,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(6, 223);
+            this.label39.Location = new System.Drawing.Point(6, 208);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(36, 15);
             this.label39.TabIndex = 104;
@@ -1556,7 +1558,7 @@
             this.label30.TabIndex = 98;
             this.label30.Text = "Coin:";
             // 
-            // listBox7
+            // btcValueListBox
             // 
             this.btcValueListBox.FormattingEnabled = true;
             this.btcValueListBox.ItemHeight = 15;
@@ -1572,11 +1574,10 @@
             "0",
             "0",
             "0",
-            "0",
             "0"});
             this.btcValueListBox.Location = new System.Drawing.Point(186, 21);
-            this.btcValueListBox.Name = "listBox7";
-            this.btcValueListBox.Size = new System.Drawing.Size(84, 199);
+            this.btcValueListBox.Name = "btcValueListBox";
+            this.btcValueListBox.Size = new System.Drawing.Size(84, 184);
             this.btcValueListBox.TabIndex = 101;
             // 
             // totalCoinListBox
@@ -1585,7 +1586,7 @@
             this.totalCoinListBox.ItemHeight = 15;
             this.totalCoinListBox.Location = new System.Drawing.Point(57, 21);
             this.totalCoinListBox.Name = "totalCoinListBox";
-            this.totalCoinListBox.Size = new System.Drawing.Size(133, 199);
+            this.totalCoinListBox.Size = new System.Drawing.Size(133, 184);
             this.totalCoinListBox.TabIndex = 100;
             // 
             // marketTotalListBox
@@ -1604,33 +1605,32 @@
             "TIPS",
             "LOT",
             "XPM",
-            "ZET",
             "DRK"});
             this.marketTotalListBox.Location = new System.Drawing.Point(8, 21);
             this.marketTotalListBox.Name = "marketTotalListBox";
-            this.marketTotalListBox.Size = new System.Drawing.Size(66, 199);
+            this.marketTotalListBox.Size = new System.Drawing.Size(66, 184);
             this.marketTotalListBox.TabIndex = 99;
             // 
             // chart3
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart3.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart3.Legends.Add(legend5);
             this.chart3.Location = new System.Drawing.Point(293, 163);
             this.chart3.Name = "chart3";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series1.CustomProperties = "DoughnutRadius=70, PieDrawingStyle=Concave, PieLabelStyle=Disabled";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart3.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series5.CustomProperties = "DoughnutRadius=70, PieDrawingStyle=Concave, PieLabelStyle=Disabled";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chart3.Series.Add(series5);
             this.chart3.Size = new System.Drawing.Size(391, 349);
             this.chart3.TabIndex = 106;
             this.chart3.Text = "chart3";
-            title1.Name = "Title1";
-            title1.Text = "Overall BTC %";
-            this.chart3.Titles.Add(title1);
+            title5.Name = "Title1";
+            title5.Text = "Overall BTC %";
+            this.chart3.Titles.Add(title5);
             // 
             // label28
             // 
@@ -1743,6 +1743,19 @@
             this.RESTAPIWorkerPercentageLabel.Size = new System.Drawing.Size(45, 15);
             this.RESTAPIWorkerPercentageLabel.TabIndex = 90;
             this.RESTAPIWorkerPercentageLabel.Text = "label59";
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel9.Location = new System.Drawing.Point(868, 14);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(63, 15);
+            this.linkLabel9.TabIndex = 68;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "bitcoin.org";
+            this.linkLabel9.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked_2);
             // 
             // Form1
             // 
@@ -1950,6 +1963,7 @@
         private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.LinkLabel linkLabel11;
         private System.Windows.Forms.LinkLabel linkLabel12;
+        private System.Windows.Forms.LinkLabel linkLabel9;
     }
 }
 

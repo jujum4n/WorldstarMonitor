@@ -9,5 +9,4 @@ DVC
 TIPS
 LOT
 XPM
-ZET
 DRK

@@ -357,10 +357,6 @@ namespace WorldStarMonitor
             dynamic marketXPMBTC = property.GetMethod.Invoke(allmarketdata.@return.markets, null);
             argumentTest.xpmbtclasttradeprice = marketXPMBTC.lasttradeprice;
 
-            property = allmarketdata.@return.markets.GetType().GetProperty("ZETBTC");
-            dynamic marketZETBTC = property.GetMethod.Invoke(allmarketdata.@return.markets, null);
-            argumentTest.zetbtclasttradeprice = marketZETBTC.lasttradeprice;
-
             property = allmarketdata.@return.markets.GetType().GetProperty("FRKBTC");
             dynamic marketFRKBTC = property.GetMethod.Invoke(allmarketdata.@return.markets, null);
             argumentTest.frkbtclasttradeprice = marketFRKBTC.lasttradeprice;
@@ -400,7 +396,7 @@ namespace WorldStarMonitor
             argumentTest.totalbc = satoshify(totalbc);
             RESTAPIworker.ReportProgress(70);
             string marketcap = REST_GET("/q/marketcap", "https://blockchain.info");
-            argumentTest.marketcap = Double.Parse(marketcap, System.Globalization.NumberStyles.Float).ToString() + " USD";
+            argumentTest.marketcap = Double.Parse(marketcap, System.Globalization.NumberStyles.Float).ToString();
 
             //Get the coinbase Restapi spot price +Value
             string coinbasevalue = REST_GET_COINBASE("api/v1/prices/spot_rate?currency=USD");
@@ -441,16 +437,16 @@ namespace WorldStarMonitor
             this.sellOrdersListBox.Items.Clear();
             this.recentTradesListBox.Items.Clear();
 
-            this.totalBitcoinLabel.Text = test.totalbc.ToString();
-            this.totalMarketCapLabel.Text = test.marketcap.ToString();
-            this.dailyAVGPriceLabel.Text = test.hrprice.ToString();
-            this.dailyTransactionTotalLabel.Text = test.hrtransactions.ToString();
-            this.dailyBitcoinSentLabel.Text = test.hrbtcsent.ToString();
-            this.blockHeightLabel.Text = test.blockheight.ToString();
-            this.blockRewardLabel.Text = test.rewardtotal.ToString();
+            this.totalBitcoinLabel.Text = test.totalbc.ToString() + " BTC";
+            this.totalMarketCapLabel.Text = test.marketcap.ToString() + " USD";
+            
+            this.dailyAVGPriceLabel.Text = test.hrprice.ToString() + " USD";
+            this.dailyTransactionTotalLabel.Text = test.hrtransactions.ToString() + " tx";
+            this.dailyBitcoinSentLabel.Text = test.hrbtcsent.ToString() + " BTC";
+            this.blockHeightLabel.Text = test.blockheight.ToString() + " Blocks";
+            this.blockRewardLabel.Text = test.rewardtotal.ToString() + " BTC";
             this.networkHashrateLabel.Text = test.difficulty.ToString() + " GHASH";
             this.probabilitySolveLabel.Text = test.probability.ToString();
-
 
             string baseDate = DateTime.Now.ToString("hh:mm:ss");
             var x = baseDate;
@@ -514,19 +510,12 @@ namespace WorldStarMonitor
             quickPriceListBox.Items[1] = dogedVal.ToString("0.00000000");
 
             double drkdVal = double.Parse(test.drkbtclasttradeprice, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture);
-            var portdrk = (double.Parse(totalCoinListBox.Items[12].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture) * drkdVal);
+            var portdrk = (double.Parse(totalCoinListBox.Items[11].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture) * drkdVal);
             minusval = (portdrk * .0030);
             portdrk = portdrk - minusval;
-            btcValueListBox.Items[12] = portdrk.ToString("0.00000000");
+            btcValueListBox.Items[11] = portdrk.ToString("0.00000000");
             quickPriceListBox.Items[3] = drkdVal.ToString("0.00000000");
 
-            /*
-            double moondVal = double.Parse(test.moonbtclasttradeprice, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture);
-            var portmoon = (double.Parse(listBox6.Items[3].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture) * moondVal);
-            minusval = (portmoon * .0030);
-            portmoon = portmoon - minusval;
-            listBox7.Items[3] = portmoon.ToString("0.00000000");
-            */
             double ftcdVal = double.Parse(test.ftcbtclasttradeprice, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture);
             var portftc = (double.Parse(totalCoinListBox.Items[3].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture) * ftcdVal);
             minusval = (portftc * .0030);
@@ -570,24 +559,6 @@ namespace WorldStarMonitor
             portxpm = portxpm - minusval;
             btcValueListBox.Items[10] = portxpm.ToString("0.00000000");
 
-            double zetdVal = double.Parse(test.zetbtclasttradeprice, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture);
-            var portzet = (double.Parse(totalCoinListBox.Items[11].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture) * zetdVal);
-            minusval = (portzet * .0030);
-            portzet = portzet - minusval;
-            btcValueListBox.Items[11] = portzet.ToString("0.00000000");
-            /*
-            double btbdVal = double.Parse(test.btbbtclasttradeprice, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture);
-            var portbtb = (double.Parse(listBox6.Items[18].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture) * btbdVal);
-            minusval = (portbtb * .0030);
-            portbtb = portbtb - minusval;
-            listBox7.Items[18] = portbtb.ToString("0.00000000");
-
-            double frkdVal = double.Parse(test.frkbtclasttradeprice, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture);
-            var portfrk = (double.Parse(listBox6.Items[15].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture) * frkdVal);
-            minusval = (portfrk * .0030);
-            portfrk = portfrk - minusval;
-            listBox7.Items[15] = portfrk.ToString("0.00000000");
-            */
             double tipsltcdVal = double.Parse(test.tipsltclasttradeprice, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture);
             var porttipsltc = (double.Parse(totalCoinListBox.Items[8].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture) * tipsltcdVal);
             minusval = (porttipsltc * .0030);
@@ -608,14 +579,13 @@ namespace WorldStarMonitor
             //double totalportbtc = portltc + (double.Parse(portbtc, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture)) +portcgb + portdoge + portdvc + portfortytwo + portfrc + portfrk + portftc + portlot + portmoon + portxpm + portzet;
             label40.Text = "~" + /*totalportbtc.ToString("0.00000000")*/finalval.ToString("0.00000000") + " BTC " + '\n' + "~" + (finalval * (double.Parse(test.coinbasevalue, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture))).ToString("0.00") + " USD";
 
-            double[] yValues = { portltc, (double.Parse(portbtc, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture)), portcgb, portdoge, porttipsbtc, portdvc, portfortytwo, portfrc, portftc, portlot/*, portmoon*/, portxpm, portzet, portdrk };
-            string[] xValues = { "Litecoin", "Bitcoin", "CryptogenicBullion", "DOGE", "Fedoracoin", "Devcoin", "42Coin", "Freicoin", "Feathercoin", "Lottocoin" /*, "Mooncoin"*/ , "Primecoin", "Zetacoin", "Darkcoin" };
+            double[] yValues = { portltc, (double.Parse(portbtc, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture)), portcgb, portdoge, porttipsbtc, portdvc, portfortytwo, portfrc, portftc, portlot/*, portmoon*/, portxpm, portdrk };
+            string[] xValues = { "Litecoin", "Bitcoin", "CryptogenicBullion", "DOGE", "Fedoracoin", "Devcoin", "42Coin", "Freicoin", "Feathercoin", "Lottocoin" /*, "Mooncoin"*/ , "Primecoin", "Darkcoin" };
 
             chart3.Series[0].Points.DataBindXY(xValues, yValues);
             chart3.Series[0].ToolTip = "#VALY, #AXISLABEL";
             // Set Doughnut chart type
             chart3.Series[0].ChartType = SeriesChartType.Doughnut;
-
         }
         //Everytime the timer ticks, populate the boxes
         void timer_Tick(object sender, EventArgs e)
@@ -627,9 +597,7 @@ namespace WorldStarMonitor
                 time = "▲",
                 label = marketListBox.GetItemText(marketListBox.SelectedItem)
             };
-            //
             // Send argument to our worker thread
-            //
             if (!RESTAPIworker.IsBusy)
             {
                 RESTAPIworker.RunWorkerAsync(test);
@@ -642,7 +610,7 @@ namespace WorldStarMonitor
             IRestResponse response = client.Execute(request);
             string toreturn = response.Content;
 
-            if (toreturn == "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.1.19</center>\r\n</body>\r\n</html>\r\n")
+            while (toreturn == "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.1.19</center>\r\n</body>\r\n</html>\r\n" || toreturn==null)
             {
                 response = client.Execute(request);
                 toreturn = response.Content;
@@ -4383,6 +4351,11 @@ namespace WorldStarMonitor
         private void linkLabel12_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://btc-e.com/");
+        }
+
+        private void linkLabel9_LinkClicked_2(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://bitcoin.org");
         }
     }
 }

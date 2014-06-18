@@ -15,7 +15,7 @@ The Address storage page acts as a place to paste strings, so you dont have to o
 This project was done using only C# Visual Studio .NET Libraries coupled with a few other open source libraries, I created a Cryptocurrency Monitor. It mainly has been used to calculate profits/losses for myself. It enabled me to view several websites data all at once and to monitor the worth of my portfolio.
 
 ##Market Data:
-![Alt text](http://i.imgur.com/MJGvvlX.png "Market Data")
+![Alt text](http://i.imgur.com/XfWkKoc.png "Market Data")
 ##Mining Tools:
 ![Alt text](http://i.imgur.com/umRtM8X.png "Mining Tools")
 ##Address Storage:

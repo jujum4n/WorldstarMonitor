@@ -39,7 +39,7 @@ Files needed along with the compiled exe inorder to run:
 - http://restsharp.org
 - https://blockchain.info
 - https://cryptsy.com
-- htps://coinbase.com
+- https://coinbase.com
 - https://btc-e.com
 
 ##Feature Requests:

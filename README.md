@@ -1,5 +1,7 @@
 Worldst▲r Monitor - Bet▲ - By: juju
 ===========================
+- Programming and Ideas - Justin Chase (juju)
+- Quality Assurance/Design - Cody Voinovich
 
 ##Description:
 This Cryptocurrency Monitor is a peice of software which utilizes various RESTAPI calls to display and calculate market data from various Bitcoin Websites (Coinbase, Cryptsy, BTC-E, Blockchain.info) 
